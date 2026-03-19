@@ -1,0 +1,33 @@
+data:
+  trade_path: data/raw/trades.parquet
+  timezone: UTC
+  interval: 30min
+  nx: 64
+  ny: 64
+  x_quantile_clip: [0.001, 0.999]   # for stable x-range
+  y_norm: log1p_zscore              # or quantile
+  y_clip_sigma: 5.0                 # clip normalized y
+
+model:
+  latent_dim: 64
+  encoder: small_cnn
+  decoder: small_cnn
+  koopman:
+    param: matrix                   # later: expm(A)
+    init_scale: 0.01
+
+train:
+  batch_size: 64
+  lr: 1e-3
+  epochs: 50
+  weight_decay: 1e-4
+  rollout_h: 1                      # start with 1-step
+  seed: 42
+
+backtest:
+  fee_bps: 5
+  slippage_bps: 2
+  rule:
+    q_tail: 0.85
+    region_x_quantile: 0.70
+    region_y_threshold: 0.0

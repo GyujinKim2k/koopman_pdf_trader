@@ -1,0 +1,48 @@
+{
+  "cfg": {
+    "root": "data/processed/BTCUSDT_2025_1d_kde_pdf_fast",
+    "pdfs_path": "pdfs_2025.npy",
+    "times_path": "times_2025.npy",
+    "closes_path": "closes_2025.npy",
+    "xgrid_month_example": "2025-01/x_grid_2025-01.npy",
+    "train_frac": 0.7,
+    "val_frac": 0.15,
+    "nx": 512,
+    "latent_dim": 64,
+    "hidden": 256,
+    "dropout": 0.05,
+    "batch_size": 512,
+    "num_workers": 2,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "max_epochs": 40,
+    "grad_clip": 1.0,
+    "patience": 6,
+    "device": "cpu",
+    "seed": 42,
+    "out_dir": "runs/koopman_1d_v1"
+  },
+  "dx": 0.0003131106495857239,
+  "T_raw": 17532,
+  "T_dedup": 17521,
+  "splits": {
+    "train": [
+      0,
+      12264
+    ],
+    "val": [
+      12264,
+      14892
+    ],
+    "test": [
+      14892,
+      17521
+    ]
+  },
+  "data_files": {
+    "pdfs": "data/processed/BTCUSDT_2025_1d_kde_pdf_fast/pdfs_2025.npy",
+    "times": "data/processed/BTCUSDT_2025_1d_kde_pdf_fast/times_2025.npy",
+    "closes": "data/processed/BTCUSDT_2025_1d_kde_pdf_fast/closes_2025.npy",
+    "xgrid_example": "data/processed/BTCUSDT_2025_1d_kde_pdf_fast/2025-01/x_grid_2025-01.npy"
+  }
+}

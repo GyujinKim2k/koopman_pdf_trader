@@ -1,0 +1,13 @@
+{
+  "symbol": "BTCUSDT",
+  "month": "2025-11",
+  "T": 1441,
+  "nx": 512,
+  "x_definition": "x = log(price / close_30m_window)",
+  "x_min": -0.08,
+  "x_max": 0.08,
+  "dx": 0.0003131115459882594,
+  "kde_implementation": "weighted histogram + Gaussian convolution (FFT)",
+  "bandwidth": 0.002,
+  "empty_window": "carry"
+}

@@ -1,0 +1,24 @@
+{
+  "cfg": {
+    "modes_dir": "runs/koopman_seq_gru_v1/modes",
+    "step_minutes": 30,
+    "hold_min_steps": 12,
+    "cooldown_steps": 12,
+    "decision_stride": 1,
+    "fee_bps": 7.5,
+    "slippage_bps": 2.5,
+    "m_fast": 10,
+    "zlook": 96,
+    "mom_lookback_steps": 12,
+    "mom_z_look": 96,
+    "mom_enter_z": 0.4
+  },
+  "results": {
+    "gross_log_return": 0.0,
+    "net_log_return": 0.0,
+    "net_simple_return": 0.0,
+    "n_trade_events": 0,
+    "round_trips_est": 0,
+    "buy_hold_simple_return": -0.07205286465717176
+  }
+}

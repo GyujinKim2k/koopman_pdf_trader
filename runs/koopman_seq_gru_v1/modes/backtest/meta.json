@@ -1,0 +1,19 @@
+{
+  "hold_steps": 2,
+  "decision_step": 1,
+  "fee_bps": 7.5,
+  "slippage_bps": 2.5,
+  "m_fast": 10,
+  "zscore_lookback": 96,
+  "thresholds": {
+    "enter_slow_z": 0.3,
+    "enter_fast_z": -0.2,
+    "exit_fast_z": 0.5
+  },
+  "results": {
+    "gross_log_return": -0.34673637038039473,
+    "net_log_return": -6.589736370380395,
+    "net_simple_return": -0.9986255977509934,
+    "n_trade_events": 6243
+  }
+}

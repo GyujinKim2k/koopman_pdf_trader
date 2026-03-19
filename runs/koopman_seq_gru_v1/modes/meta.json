@@ -1,0 +1,17 @@
+{
+  "ckpt": "runs/koopman_seq_gru_v1/best.pt",
+  "T_dedup": 17521,
+  "L": 48,
+  "Nz": 17474,
+  "latent_dim": 64,
+  "sorting": "modes sorted by |eigval| descending",
+  "files": {
+    "K": "runs/koopman_seq_gru_v1/modes/K.npy",
+    "eigvals": "runs/koopman_seq_gru_v1/modes/eigvals.npy",
+    "eigvecs": "runs/koopman_seq_gru_v1/modes/eigvecs.npy",
+    "Z_latent": "runs/koopman_seq_gru_v1/modes/Z_latent.npy",
+    "A_amplitudes": "runs/koopman_seq_gru_v1/modes/A_amplitudes.npy",
+    "times_z": "runs/koopman_seq_gru_v1/modes/times_z.npy",
+    "closes_z": "runs/koopman_seq_gru_v1/modes/closes_z.npy"
+  }
+}
